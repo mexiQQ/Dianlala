@@ -14,7 +14,8 @@
 		AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */; };
 		AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFC11A25B9E200C508E7 /* LaunchScreen.xib */; };
 		AFCFEFCF1A25B9E200C508E7 /* DianlalaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFCE1A25B9E200C508E7 /* DianlalaTests.m */; };
-		AFCFEFDB1A25E40000C508E7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFDA1A25E40000C508E7 /* JSONKit.m */; };
+		AFCFEFDE1A25F7C700C508E7 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFDD1A25F7C700C508E7 /* QRViewController.m */; };
+		AFCFEFE01A25FD6000C508E7 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */; };
 		BC2B7B0A564C6CEC8337CBC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58DED6D18CD1CA018BEAE3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +44,9 @@
 		AFCFEFC81A25B9E200C508E7 /* DianlalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DianlalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFCD1A25B9E200C508E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCFEFCE1A25B9E200C508E7 /* DianlalaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DianlalaTests.m; sourceTree = "<group>"; };
-		AFCFEFD91A25E40000C508E7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		AFCFEFDA1A25E40000C508E7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		AFCFEFDC1A25F7C600C508E7 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		AFCFEFDD1A25F7C700C508E7 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
+		AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		BADD36F590F7E1511B8BFD23 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BF54BFD3F69D7D8686E53AA9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,8 @@
 			children = (
 				AFCFEFB91A25B9E200C508E7 /* LoginViewController.h */,
 				AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */,
+				AFCFEFDC1A25F7C600C508E7 /* QRViewController.h */,
+				AFCFEFDD1A25F7C700C508E7 /* QRViewController.m */,
 				AFCFEFBC1A25B9E200C508E7 /* Main.storyboard */,
 				AFCFEFD81A25E3CF00C508E7 /* Vendor */,
 				AFCFEFB21A25B9E200C508E7 /* Supporting Files */,
@@ -120,6 +124,7 @@
 		AFCFEFB21A25B9E200C508E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */,
 				AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */,
 				AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */,
 				AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */,
@@ -150,8 +155,6 @@
 		AFCFEFD81A25E3CF00C508E7 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				AFCFEFD91A25E40000C508E7 /* JSONKit.h */,
-				AFCFEFDA1A25E40000C508E7 /* JSONKit.m */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				AFCFEFBE1A25B9E200C508E7 /* Main.storyboard in Resources */,
 				AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */,
+				AFCFEFE01A25FD6000C508E7 /* beep.mp3 in Resources */,
 				AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +297,7 @@
 			files = (
 				AFCFEFBB1A25B9E200C508E7 /* LoginViewController.m in Sources */,
 				AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */,
-				AFCFEFDB1A25E40000C508E7 /* JSONKit.m in Sources */,
+				AFCFEFDE1A25F7C700C508E7 /* QRViewController.m in Sources */,
 				AFCFEFB51A25B9E200C508E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

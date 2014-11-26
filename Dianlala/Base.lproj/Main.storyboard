@@ -51,7 +51,7 @@
         <!--View Controller-->
         <scene sceneID="JEW-gW-Axg">
             <objects>
-                <viewController id="N1d-Fq-rYD" sceneMemberID="viewController">
+                <viewController id="N1d-Fq-rYD" customClass="QRViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h3K-3M-tR2"/>
                         <viewControllerLayoutGuide type="bottom" id="bfE-oc-5xh"/>
@@ -59,9 +59,45 @@
                     <view key="view" contentMode="scaleToFill" id="Rnd-Vm-XnP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aol-zZ-rTq">
+                                <rect key="frame" x="53" y="109" width="215" height="215"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-Wb-8YV">
+                                        <rect key="frame" x="53" y="97" width="108" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14901961389999999" green="0.75686281919999998" blue="0.30980393290000002" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZs-ix-E74">
+                                <rect key="frame" x="115" y="405" width="90" height="30"/>
+                                <state key="normal" title="点击扫描签到">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartScaning:" destination="N1d-Fq-rYD" eventType="touchUpInside" id="fXh-dw-Htn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUi-6V-D9u">
+                                <rect key="frame" x="115" y="457" width="90" height="30"/>
+                                <state key="normal" title="点击停止扫描">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopScaning:" destination="N1d-Fq-rYD" eventType="touchUpInside" id="1Iw-TX-jDf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wXO-6b-2hr"/>
+                    <connections>
+                        <outlet property="QRView" destination="aol-zZ-rTq" id="UHa-7M-TS8"/>
+                        <outlet property="ScaningState" destination="GFK-Wb-8YV" id="bsx-GZ-5id"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqD-ZY-QcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
