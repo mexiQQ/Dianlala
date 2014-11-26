@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		AFCFEFB51A25B9E200C508E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB41A25B9E200C508E7 /* main.m */; };
 		AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */; };
-		AFCFEFBB1A25B9E200C508E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFBA1A25B9E200C508E7 /* ViewController.m */; };
+		AFCFEFBB1A25B9E200C508E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */; };
 		AFCFEFBE1A25B9E200C508E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFBC1A25B9E200C508E7 /* Main.storyboard */; };
 		AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */; };
 		AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFC11A25B9E200C508E7 /* LaunchScreen.xib */; };
 		AFCFEFCF1A25B9E200C508E7 /* DianlalaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFCE1A25B9E200C508E7 /* DianlalaTests.m */; };
+		AFCFEFDB1A25E40000C508E7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFDA1A25E40000C508E7 /* JSONKit.m */; };
+		BC2B7B0A564C6CEC8337CBC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58DED6D18CD1CA018BEAE3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +29,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B58DED6D18CD1CA018BEAE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFAF1A25B9E200C508E7 /* Dianlala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dianlala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFB31A25B9E200C508E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCFEFB41A25B9E200C508E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AFCFEFB91A25B9E200C508E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AFCFEFBA1A25B9E200C508E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFCFEFB91A25B9E200C508E7 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AFCFEFBD1A25B9E200C508E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AFCFEFC21A25B9E200C508E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AFCFEFC81A25B9E200C508E7 /* DianlalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DianlalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFCD1A25B9E200C508E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCFEFCE1A25B9E200C508E7 /* DianlalaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DianlalaTests.m; sourceTree = "<group>"; };
+		AFCFEFD91A25E40000C508E7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		AFCFEFDA1A25E40000C508E7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		BADD36F590F7E1511B8BFD23 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BF54BFD3F69D7D8686E53AA9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2B7B0A564C6CEC8337CBC8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2511227A96A8B0C6E540EAA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B58DED6D18CD1CA018BEAE3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52AB37D58565ECF55B01B0B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BADD36F590F7E1511B8BFD23 /* Pods.debug.xcconfig */,
+				BF54BFD3F69D7D8686E53AA9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AFCFEFA61A25B9E200C508E7 = {
 			isa = PBXGroup;
 			children = (
 				AFCFEFB11A25B9E200C508E7 /* Dianlala */,
 				AFCFEFCB1A25B9E200C508E7 /* DianlalaTests */,
 				AFCFEFB01A25B9E200C508E7 /* Products */,
+				52AB37D58565ECF55B01B0B0 /* Pods */,
+				2511227A96A8B0C6E540EAA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +108,10 @@
 		AFCFEFB11A25B9E200C508E7 /* Dianlala */ = {
 			isa = PBXGroup;
 			children = (
-				AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */,
-				AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */,
-				AFCFEFB91A25B9E200C508E7 /* ViewController.h */,
-				AFCFEFBA1A25B9E200C508E7 /* ViewController.m */,
+				AFCFEFB91A25B9E200C508E7 /* LoginViewController.h */,
+				AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */,
 				AFCFEFBC1A25B9E200C508E7 /* Main.storyboard */,
-				AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */,
-				AFCFEFC11A25B9E200C508E7 /* LaunchScreen.xib */,
+				AFCFEFD81A25E3CF00C508E7 /* Vendor */,
 				AFCFEFB21A25B9E200C508E7 /* Supporting Files */,
 			);
 			path = Dianlala;
@@ -96,6 +120,10 @@
 		AFCFEFB21A25B9E200C508E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */,
+				AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */,
+				AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */,
+				AFCFEFC11A25B9E200C508E7 /* LaunchScreen.xib */,
 				AFCFEFB31A25B9E200C508E7 /* Info.plist */,
 				AFCFEFB41A25B9E200C508E7 /* main.m */,
 			);
@@ -119,6 +147,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AFCFEFD81A25E3CF00C508E7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AFCFEFD91A25E40000C508E7 /* JSONKit.h */,
+				AFCFEFDA1A25E40000C508E7 /* JSONKit.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFCFEFD21A25B9E200C508E7 /* Build configuration list for PBXNativeTarget "Dianlala" */;
 			buildPhases = (
+				37342B0631A0E497796BBC8C /* Check Pods Manifest.lock */,
 				AFCFEFAB1A25B9E200C508E7 /* Sources */,
 				AFCFEFAC1A25B9E200C508E7 /* Frameworks */,
 				AFCFEFAD1A25B9E200C508E7 /* Resources */,
+				67670CFECB63705F41702D8A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +253,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37342B0631A0E497796BBC8C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67670CFECB63705F41702D8A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFCFEFAB1A25B9E200C508E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCFEFBB1A25B9E200C508E7 /* ViewController.m in Sources */,
+				AFCFEFBB1A25B9E200C508E7 /* LoginViewController.m in Sources */,
 				AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */,
+				AFCFEFDB1A25E40000C508E7 /* JSONKit.m in Sources */,
 				AFCFEFB51A25B9E200C508E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +414,7 @@
 		};
 		AFCFEFD31A25B9E200C508E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADD36F590F7E1511B8BFD23 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dianlala/Info.plist;
@@ -351,6 +425,7 @@
 		};
 		AFCFEFD41A25B9E200C508E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF54BFD3F69D7D8686E53AA9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dianlala/Info.plist;
@@ -412,6 +487,7 @@
 				AFCFEFD41A25B9E200C508E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFCFEFD51A25B9E200C508E7 /* Build configuration list for PBXNativeTarget "DianlalaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +496,7 @@
 				AFCFEFD71A25B9E200C508E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

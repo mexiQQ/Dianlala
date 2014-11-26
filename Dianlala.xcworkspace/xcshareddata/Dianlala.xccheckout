@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8011B92B-0D6C-4072-B4D8-4C8A0DC0AA05</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Dianlala</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8EF4F95F3136AD12E260D13AF41A513754B1A966</key>
+		<string>https://github.com/mexiQQ/Dianlala.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Dianlala.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8EF4F95F3136AD12E260D13AF41A513754B1A966</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mexiQQ/Dianlala.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8EF4F95F3136AD12E260D13AF41A513754B1A966</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8EF4F95F3136AD12E260D13AF41A513754B1A966</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Dianlala</string>
+		</dict>
+	</array>
+</dict>
+</plist>
