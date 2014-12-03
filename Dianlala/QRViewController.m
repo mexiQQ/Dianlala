@@ -48,10 +48,7 @@
 - (IBAction)StartScaning:(id)sender {
     
     if(IOS7){
-        RootViewController * rt = [[RootViewController alloc]init];
-        [self presentViewController:rt animated:YES completion:^{
-            
-        }];
+        [self performSegueWithIdentifier:@"scaning" sender:self];
     }
 
     /*
@@ -163,7 +160,6 @@
             // If the found metadata is equal to the QR code metadata then update the status label's text,
             // stop reading and change the bar button item's title and the flag's value.
             // Everything is done on the main thread.
-
             
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
 

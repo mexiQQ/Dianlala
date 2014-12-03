@@ -204,6 +204,29 @@
             </objects>
             <point key="canvasLocation" x="996" y="319"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="JTQ-Bw-9zu">
+            <objects>
+                <viewController id="Su7-bG-rJi" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ujB-Ky-Zko"/>
+                        <viewControllerLayoutGuide type="bottom" id="gC9-0K-c29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kpd-ZA-Ybu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ml6-up-8vf"/>
+                    <connections>
+                        <segue destination="nbs-EO-ZL3" kind="push" identifier="signSuccess" id="KKd-LG-msw"/>
+                        <segue destination="Yeb-QG-smg" kind="push" identifier="signFaile" id="NoX-Wn-KmF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ijb-sy-TYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-82"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="JEW-gW-Axg">
             <objects>
@@ -279,8 +302,7 @@
                         <outlet property="QRView" destination="aol-zZ-rTq" id="UHa-7M-TS8"/>
                         <outlet property="resetButton" destination="mEI-Wb-8Yd" id="7gy-AO-7MI"/>
                         <outlet property="startAndStopButton" destination="uZs-ix-E74" id="BDJ-Hd-ecs"/>
-                        <segue destination="nbs-EO-ZL3" kind="push" identifier="signSuccess" id="L9q-ak-Kjt"/>
-                        <segue destination="Yeb-QG-smg" kind="push" identifier="signFail" id="VNR-2J-X8Y"/>
+                        <segue destination="Su7-bG-rJi" kind="push" identifier="scaning" id="lpR-g2-gsP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqD-ZY-QcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGk-MP-Wy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839" y="627"/>
+            <point key="canvasLocation" x="2254" y="583"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="djP-9i-7FH">
@@ -459,7 +481,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yto-wW-rM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839" y="-32"/>
+            <point key="canvasLocation" x="2187" y="-114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ipi-8p-V3Z">
@@ -492,8 +514,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Tat-kX-Zkd"/>
         <segue reference="Jew-eb-xUs"/>
+        <segue reference="bt9-bH-7oV"/>
         <segue reference="uS5-rS-R42"/>
     </inferredMetricsTieBreakers>
 </document>

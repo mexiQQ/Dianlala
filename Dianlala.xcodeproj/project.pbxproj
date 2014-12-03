@@ -44,6 +44,8 @@
 		AFC588141A2F60160015BF75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588131A2F60160015BF75 /* Foundation.framework */; };
 		AFC588161A2F60220015BF75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588151A2F60220015BF75 /* CoreGraphics.framework */; };
 		AFC588181A2F602B0015BF75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588171A2F602B0015BF75 /* UIKit.framework */; };
+		AFC5881B1A2F6D930015BF75 /* ValidSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5881A1A2F6D930015BF75 /* ValidSuccessViewController.m */; };
+		AFC5881E1A2F6DA60015BF75 /* ValidFaileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5881D1A2F6DA60015BF75 /* ValidFaileViewController.m */; };
 		AFCFEFB51A25B9E200C508E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB41A25B9E200C508E7 /* main.m */; };
 		AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */; };
 		AFCFEFBB1A25B9E200C508E7 /* BindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFBA1A25B9E200C508E7 /* BindViewController.m */; };
@@ -110,6 +112,10 @@
 		AFC588131A2F60160015BF75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFC588151A2F60220015BF75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AFC588171A2F602B0015BF75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFC588191A2F6D930015BF75 /* ValidSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidSuccessViewController.h; sourceTree = "<group>"; };
+		AFC5881A1A2F6D930015BF75 /* ValidSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidSuccessViewController.m; sourceTree = "<group>"; };
+		AFC5881C1A2F6DA60015BF75 /* ValidFaileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidFaileViewController.h; sourceTree = "<group>"; };
+		AFC5881D1A2F6DA60015BF75 /* ValidFaileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidFaileViewController.m; sourceTree = "<group>"; };
 		AFCFEFAF1A25B9E200C508E7 /* Dianlala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dianlala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFB31A25B9E200C508E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCFEFB41A25B9E200C508E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -265,6 +271,10 @@
 				AF9EF0411A27588900AF2245 /* ConfirmViewController.m */,
 				AF24656C1A276E1F00577C53 /* ResetBindViewController.h */,
 				AF24656D1A276E1F00577C53 /* ResetBindViewController.m */,
+				AFC588191A2F6D930015BF75 /* ValidSuccessViewController.h */,
+				AFC5881A1A2F6D930015BF75 /* ValidSuccessViewController.m */,
+				AFC5881C1A2F6DA60015BF75 /* ValidFaileViewController.h */,
+				AFC5881D1A2F6DA60015BF75 /* ValidFaileViewController.m */,
 				AFCFEFBC1A25B9E200C508E7 /* Main.storyboard */,
 				AFCFEFD81A25E3CF00C508E7 /* Vendor */,
 				AFCFEFB21A25B9E200C508E7 /* Supporting Files */,
@@ -473,10 +483,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9EF03F1A274B6900AF2245 /* UIButton+Bootstrap.m in Sources */,
+				AFC5881E1A2F6DA60015BF75 /* ValidFaileViewController.m in Sources */,
 				AF9EF03E1A274B6900AF2245 /* NSString+FontAwesome.m in Sources */,
 				AFCFEFBB1A25B9E200C508E7 /* BindViewController.m in Sources */,
 				AF24656E1A276E1F00577C53 /* ResetBindViewController.m in Sources */,
 				AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */,
+				AFC5881B1A2F6D930015BF75 /* ValidSuccessViewController.m in Sources */,
 				AFCFEFDE1A25F7C700C508E7 /* QRViewController.m in Sources */,
 				AFCFEFB51A25B9E200C508E7 /* main.m in Sources */,
 				AFC588041A2F56B60015BF75 /* RootViewController.m in Sources */,

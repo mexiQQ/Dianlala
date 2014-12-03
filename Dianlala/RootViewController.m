@@ -45,6 +45,11 @@
     labIntroudction.text=@"将二维码图像置于矩形方框内，离手机摄像头10CM左右，系统会自动识别。";
     [self.view addSubview:labIntroudction];
     
+    //对指示器的设置
+    _Indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [_Indicator setFrame:CGRectMake((self.view.frame.size.width-30)/2,(self.view.frame.size.height-30)/2 , 30, 30)];
+    [_Indicator hidesWhenStopped];
+    [self.view addSubview:_Indicator];
     
     UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 100, 300, 300)];
     imageView.image = [UIImage imageNamed:@"pick_bg"];
@@ -142,11 +147,28 @@
     }
     
     [_session stopRunning];
+    [_Indicator startAnimating];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"http://ljwtest.sinaapp.com/testJson.php" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        [_Indicator stopAnimating];
+        [timer invalidate];
+        [self performSegueWithIdentifier:@"signSuccess" sender:self];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        [_Indicator stopAnimating];
+        [timer invalidate];
+        [self performSegueWithIdentifier:@"scaning" sender:self];
+    }];
+    
+    /*
     [self dismissViewControllerAnimated:YES completion:^
      {
          [timer invalidate];
          NSLog(@"%@",stringValue);
      }];
+     */
 }
 
 - (void)didReceiveMemoryWarning
