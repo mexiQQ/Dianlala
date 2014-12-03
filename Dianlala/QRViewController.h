@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIButton+Bootstrap.h"
+#import "RootViewController.h"
 
 #import <AVFoundation/AVFoundation.h>
 

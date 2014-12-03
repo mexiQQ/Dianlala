@@ -27,7 +27,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.navigationController.navigationBar setHidden:YES];
-    [_startAndStopButton defaultStyle];
     [_resetButton defaultStyle];
     // Initially make the captureSession object nil.
     _captureSession = nil;
@@ -44,17 +43,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#define IOS7 [[[UIDevice currentDevice] systemVersion]floatValue]>=7
 
 - (IBAction)StartScaning:(id)sender {
+    
+    if(IOS7){
+        RootViewController * rt = [[RootViewController alloc]init];
+        [self presentViewController:rt animated:YES completion:^{
+            
+        }];
+    }
+
+    /*
     if (!_isReading) {
         // This is the case where the app should read a QR code when the start button is tapped.
         if ([self startReading]) {
@@ -68,6 +68,7 @@
     }
     // Set to the flag the exact opposite value of the one that currently has.
     _isReading = !_isReading;
+     */
 }
 
 #pragma mark - Private method implementation
@@ -175,7 +176,16 @@
         }
     }
     
-
+    /*
+     #pragma mark - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     // Get the new view controller using [segue destinationViewController].
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     /*
      AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
      [manager GET:@"http://ljwtest.sinaapp.com/testJson.php" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {

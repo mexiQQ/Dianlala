@@ -33,6 +33,17 @@
 		AF9EF03E1A274B6900AF2245 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EF03B1A274B6900AF2245 /* NSString+FontAwesome.m */; };
 		AF9EF03F1A274B6900AF2245 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EF03D1A274B6900AF2245 /* UIButton+Bootstrap.m */; };
 		AF9EF0421A27588900AF2245 /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EF0411A27588900AF2245 /* ConfirmViewController.m */; };
+		AFC588041A2F56B60015BF75 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC588031A2F56B60015BF75 /* RootViewController.m */; };
+		AFC588071A2F588A0015BF75 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC588051A2F588A0015BF75 /* line@2x.png */; };
+		AFC588081A2F588A0015BF75 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC588061A2F588A0015BF75 /* pick_bg@2x.png */; };
+		AFC5880A1A2F5FCA0015BF75 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588091A2F5FCA0015BF75 /* libiconv.dylib */; };
+		AFC5880C1A2F5FE30015BF75 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC5880B1A2F5FE30015BF75 /* CoreVideo.framework */; };
+		AFC5880E1A2F5FEF0015BF75 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC5880D1A2F5FEF0015BF75 /* CoreMedia.framework */; };
+		AFC588101A2F60030015BF75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC5880F1A2F60030015BF75 /* QuartzCore.framework */; };
+		AFC588121A2F600D0015BF75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588111A2F600D0015BF75 /* AVFoundation.framework */; };
+		AFC588141A2F60160015BF75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588131A2F60160015BF75 /* Foundation.framework */; };
+		AFC588161A2F60220015BF75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588151A2F60220015BF75 /* CoreGraphics.framework */; };
+		AFC588181A2F602B0015BF75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC588171A2F602B0015BF75 /* UIKit.framework */; };
 		AFCFEFB51A25B9E200C508E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB41A25B9E200C508E7 /* main.m */; };
 		AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */; };
 		AFCFEFBB1A25B9E200C508E7 /* BindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFBA1A25B9E200C508E7 /* BindViewController.m */; };
@@ -87,6 +98,18 @@
 		AF9EF03D1A274B6900AF2245 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
 		AF9EF0401A27588900AF2245 /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
 		AF9EF0411A27588900AF2245 /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
+		AFC588021A2F56B60015BF75 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		AFC588031A2F56B60015BF75 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		AFC588051A2F588A0015BF75 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		AFC588061A2F588A0015BF75 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		AFC588091A2F5FCA0015BF75 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		AFC5880B1A2F5FE30015BF75 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		AFC5880D1A2F5FEF0015BF75 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		AFC5880F1A2F60030015BF75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AFC588111A2F600D0015BF75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AFC588131A2F60160015BF75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AFC588151A2F60220015BF75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFC588171A2F602B0015BF75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFCFEFAF1A25B9E200C508E7 /* Dianlala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dianlala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFB31A25B9E200C508E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCFEFB41A25B9E200C508E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +135,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC588181A2F602B0015BF75 /* UIKit.framework in Frameworks */,
+				AFC588161A2F60220015BF75 /* CoreGraphics.framework in Frameworks */,
+				AFC588141A2F60160015BF75 /* Foundation.framework in Frameworks */,
+				AFC588121A2F600D0015BF75 /* AVFoundation.framework in Frameworks */,
+				AFC588101A2F60030015BF75 /* QuartzCore.framework in Frameworks */,
+				AFC5880E1A2F5FEF0015BF75 /* CoreMedia.framework in Frameworks */,
+				AFC5880C1A2F5FE30015BF75 /* CoreVideo.framework in Frameworks */,
+				AFC5880A1A2F5FCA0015BF75 /* libiconv.dylib in Frameworks */,
 				BC2B7B0A564C6CEC8337CBC8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +160,14 @@
 		2511227A96A8B0C6E540EAA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFC588171A2F602B0015BF75 /* UIKit.framework */,
+				AFC588151A2F60220015BF75 /* CoreGraphics.framework */,
+				AFC588131A2F60160015BF75 /* Foundation.framework */,
+				AFC588111A2F600D0015BF75 /* AVFoundation.framework */,
+				AFC5880F1A2F60030015BF75 /* QuartzCore.framework */,
+				AFC5880D1A2F5FEF0015BF75 /* CoreMedia.framework */,
+				AFC5880B1A2F5FE30015BF75 /* CoreVideo.framework */,
+				AFC588091A2F5FCA0015BF75 /* libiconv.dylib */,
 				8B58DED6D18CD1CA018BEAE3 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -160,6 +199,8 @@
 		AF9EF0381A2732C000AF2245 /* material */ = {
 			isa = PBXGroup;
 			children = (
+				AFC588051A2F588A0015BF75 /* line@2x.png */,
+				AFC588061A2F588A0015BF75 /* pick_bg@2x.png */,
 				AF9EF0181A2732B500AF2245 /* 按钮_1-640X100.png */,
 				AF9EF0191A2732B500AF2245 /* 按钮_2-280X105.png */,
 				AF9EF01A1A2732B500AF2245 /* 背景-640X960.png */,
@@ -214,6 +255,8 @@
 		AFCFEFB11A25B9E200C508E7 /* Dianlala */ = {
 			isa = PBXGroup;
 			children = (
+				AFC588021A2F56B60015BF75 /* RootViewController.h */,
+				AFC588031A2F56B60015BF75 /* RootViewController.m */,
 				AFCFEFB91A25B9E200C508E7 /* BindViewController.h */,
 				AFCFEFBA1A25B9E200C508E7 /* BindViewController.m */,
 				AFCFEFDC1A25F7C600C508E7 /* QRViewController.h */,
@@ -359,6 +402,7 @@
 				AF9EF0131A27329D00AF2245 /* 点名成功.png in Resources */,
 				AFCFEFE01A25FD6000C508E7 /* beep.mp3 in Resources */,
 				AF9EF0351A2732B500AF2245 /* 线-480X1.png in Resources */,
+				AFC588071A2F588A0015BF75 /* line@2x.png in Resources */,
 				AF9EF0121A27329D00AF2245 /* 登录界面.png in Resources */,
 				AF9EF02B1A2732B500AF2245 /* 背景-640X1136.png in Resources */,
 				AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */,
@@ -374,6 +418,7 @@
 				AF9EF02A1A2732B500AF2245 /* 背景-640X960.png in Resources */,
 				AF9EF0321A2732B500AF2245 /* 人头-405X404.png in Resources */,
 				AF9EF0171A27329D00AF2245 /* 主界面.bmp in Resources */,
+				AFC588081A2F588A0015BF75 /* pick_bg@2x.png in Resources */,
 				AF9EF0371A2732B500AF2245 /* 学号-44X44.png in Resources */,
 				AF9EF0301A2732B500AF2245 /* 顶蓝-640X100.png in Resources */,
 				AF9EF0331A2732B500AF2245 /* 扫描-504X505.png in Resources */,
@@ -434,6 +479,7 @@
 				AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */,
 				AFCFEFDE1A25F7C700C508E7 /* QRViewController.m in Sources */,
 				AFCFEFB51A25B9E200C508E7 /* main.m in Sources */,
+				AFC588041A2F56B60015BF75 /* RootViewController.m in Sources */,
 				AF9EF0421A27588900AF2245 /* ConfirmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +605,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dianlala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -570,6 +620,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dianlala/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
