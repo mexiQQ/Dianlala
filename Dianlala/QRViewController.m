@@ -26,7 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [self.navigationController.navigationBar setHidden:YES];
+    [_startAndStopButton defaultStyle];
+    [_resetButton defaultStyle];
     // Initially make the captureSession object nil.
     _captureSession = nil;
     
@@ -57,17 +59,15 @@
         // This is the case where the app should read a QR code when the start button is tapped.
         if ([self startReading]) {
             // If the startReading methods returns YES and the capture session is successfully
-            // running, then change the start button title and the status message.
-            [_ScaningState setText:@"Scanning for QR Code..."];
+            [_startAndStopButton setTitle:@"停止扫描" forState:UIControlStateNormal];
         }
+    }else{
+        [self stopReading];
+        // The bar button item's title should change again.
+        [_startAndStopButton setTitle:@"开始扫描" forState:UIControlStateNormal];
     }
     // Set to the flag the exact opposite value of the one that currently has.
     _isReading = !_isReading;
-
-}
-
-- (IBAction)StopScaning:(id)sender {
-    [self stopReading];
 }
 
 #pragma mark - Private method implementation
@@ -162,7 +162,7 @@
             // If the found metadata is equal to the QR code metadata then update the status label's text,
             // stop reading and change the bar button item's title and the flag's value.
             // Everything is done on the main thread.
-            [_ScaningState performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
+
             
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
 
@@ -175,7 +175,29 @@
         }
     }
     
-    
+
+    /*
+     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+     [manager GET:@"http://ljwtest.sinaapp.com/testJson.php" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+     NSLog(@"JSON: %@", responseObject);
+     [self performSegueWithIdentifier:@"loginSegue" sender:self];
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+     NSLog(@"Error: %@", error);
+     }];
+     
+     
+     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+     manager.requestSerializer = [AFJSONRequestSerializer serializer];
+     manager.responseSerializer = [AFJSONResponseSerializer serializer];
+     NSDictionary *parameters = @{@"name": @"lijianwei",@"desc":@"boy"};
+     [manager POST:@"http://localhost:8080/api/Laboratory" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+     NSLog(@"JSON: %@", responseObject);
+     [self performSegueWithIdentifier:@"loginSegue" sender:self];
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+     NSLog(@"Error: %@", error);
+     }];
+     */
+
 }
 
 @end

@@ -7,9 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF24656E1A276E1F00577C53 /* ResetBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF24656D1A276E1F00577C53 /* ResetBindViewController.m */; };
+		AF9EF0121A27329D00AF2245 /* 登录界面.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF00C1A27329D00AF2245 /* 登录界面.png */; };
+		AF9EF0131A27329D00AF2245 /* 点名成功.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF00D1A27329D00AF2245 /* 点名成功.png */; };
+		AF9EF0141A27329D00AF2245 /* 点名失败.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF00E1A27329D00AF2245 /* 点名失败.png */; };
+		AF9EF0151A27329D00AF2245 /* 更改信息成功.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF00F1A27329D00AF2245 /* 更改信息成功.png */; };
+		AF9EF0161A27329D00AF2245 /* 更改信息界面.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0101A27329D00AF2245 /* 更改信息界面.png */; };
+		AF9EF0171A27329D00AF2245 /* 主界面.bmp in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0111A27329D00AF2245 /* 主界面.bmp */; };
+		AF9EF0281A2732B500AF2245 /* 按钮_1-640X100.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0181A2732B500AF2245 /* 按钮_1-640X100.png */; };
+		AF9EF0291A2732B500AF2245 /* 按钮_2-280X105.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0191A2732B500AF2245 /* 按钮_2-280X105.png */; };
+		AF9EF02A1A2732B500AF2245 /* 背景-640X960.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF01A1A2732B500AF2245 /* 背景-640X960.png */; };
+		AF9EF02B1A2732B500AF2245 /* 背景-640X1136.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF01B1A2732B500AF2245 /* 背景-640X1136.png */; };
+		AF9EF02C1A2732B500AF2245 /* 背景1-640X960.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF01C1A2732B500AF2245 /* 背景1-640X960.png */; };
+		AF9EF02D1A2732B500AF2245 /* 背景1-640X1136.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF01D1A2732B500AF2245 /* 背景1-640X1136.png */; };
+		AF9EF02E1A2732B500AF2245 /* 成功-350X350.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF01E1A2732B500AF2245 /* 成功-350X350.png */; };
+		AF9EF02F1A2732B500AF2245 /* 顶红-640X100.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF01F1A2732B500AF2245 /* 顶红-640X100.png */; };
+		AF9EF0301A2732B500AF2245 /* 顶蓝-640X100.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0201A2732B500AF2245 /* 顶蓝-640X100.png */; };
+		AF9EF0311A2732B500AF2245 /* 返回箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0211A2732B500AF2245 /* 返回箭头.png */; };
+		AF9EF0321A2732B500AF2245 /* 人头-405X404.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0221A2732B500AF2245 /* 人头-405X404.png */; };
+		AF9EF0331A2732B500AF2245 /* 扫描-504X505.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0231A2732B500AF2245 /* 扫描-504X505.png */; };
+		AF9EF0341A2732B500AF2245 /* 失败-350X350.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0241A2732B500AF2245 /* 失败-350X350.png */; };
+		AF9EF0351A2732B500AF2245 /* 线-480X1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0251A2732B500AF2245 /* 线-480X1.png */; };
+		AF9EF0361A2732B500AF2245 /* 姓名-44X44.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0261A2732B500AF2245 /* 姓名-44X44.png */; };
+		AF9EF0371A2732B500AF2245 /* 学号-44X44.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9EF0271A2732B500AF2245 /* 学号-44X44.png */; };
+		AF9EF03E1A274B6900AF2245 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EF03B1A274B6900AF2245 /* NSString+FontAwesome.m */; };
+		AF9EF03F1A274B6900AF2245 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EF03D1A274B6900AF2245 /* UIButton+Bootstrap.m */; };
+		AF9EF0421A27588900AF2245 /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EF0411A27588900AF2245 /* ConfirmViewController.m */; };
 		AFCFEFB51A25B9E200C508E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB41A25B9E200C508E7 /* main.m */; };
 		AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */; };
-		AFCFEFBB1A25B9E200C508E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */; };
+		AFCFEFBB1A25B9E200C508E7 /* BindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFBA1A25B9E200C508E7 /* BindViewController.m */; };
 		AFCFEFBE1A25B9E200C508E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFBC1A25B9E200C508E7 /* Main.storyboard */; };
 		AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */; };
 		AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFC11A25B9E200C508E7 /* LaunchScreen.xib */; };
@@ -31,13 +57,43 @@
 
 /* Begin PBXFileReference section */
 		8B58DED6D18CD1CA018BEAE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF24656C1A276E1F00577C53 /* ResetBindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetBindViewController.h; sourceTree = "<group>"; };
+		AF24656D1A276E1F00577C53 /* ResetBindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetBindViewController.m; sourceTree = "<group>"; };
+		AF9EF00C1A27329D00AF2245 /* 登录界面.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录界面.png"; sourceTree = "<group>"; };
+		AF9EF00D1A27329D00AF2245 /* 点名成功.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "点名成功.png"; sourceTree = "<group>"; };
+		AF9EF00E1A27329D00AF2245 /* 点名失败.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "点名失败.png"; sourceTree = "<group>"; };
+		AF9EF00F1A27329D00AF2245 /* 更改信息成功.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更改信息成功.png"; sourceTree = "<group>"; };
+		AF9EF0101A27329D00AF2245 /* 更改信息界面.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更改信息界面.png"; sourceTree = "<group>"; };
+		AF9EF0111A27329D00AF2245 /* 主界面.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "主界面.bmp"; sourceTree = "<group>"; };
+		AF9EF0181A2732B500AF2245 /* 按钮_1-640X100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮_1-640X100.png"; sourceTree = "<group>"; };
+		AF9EF0191A2732B500AF2245 /* 按钮_2-280X105.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮_2-280X105.png"; sourceTree = "<group>"; };
+		AF9EF01A1A2732B500AF2245 /* 背景-640X960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景-640X960.png"; sourceTree = "<group>"; };
+		AF9EF01B1A2732B500AF2245 /* 背景-640X1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景-640X1136.png"; sourceTree = "<group>"; };
+		AF9EF01C1A2732B500AF2245 /* 背景1-640X960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景1-640X960.png"; sourceTree = "<group>"; };
+		AF9EF01D1A2732B500AF2245 /* 背景1-640X1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景1-640X1136.png"; sourceTree = "<group>"; };
+		AF9EF01E1A2732B500AF2245 /* 成功-350X350.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "成功-350X350.png"; sourceTree = "<group>"; };
+		AF9EF01F1A2732B500AF2245 /* 顶红-640X100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "顶红-640X100.png"; sourceTree = "<group>"; };
+		AF9EF0201A2732B500AF2245 /* 顶蓝-640X100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "顶蓝-640X100.png"; sourceTree = "<group>"; };
+		AF9EF0211A2732B500AF2245 /* 返回箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回箭头.png"; sourceTree = "<group>"; };
+		AF9EF0221A2732B500AF2245 /* 人头-405X404.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人头-405X404.png"; sourceTree = "<group>"; };
+		AF9EF0231A2732B500AF2245 /* 扫描-504X505.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描-504X505.png"; sourceTree = "<group>"; };
+		AF9EF0241A2732B500AF2245 /* 失败-350X350.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "失败-350X350.png"; sourceTree = "<group>"; };
+		AF9EF0251A2732B500AF2245 /* 线-480X1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "线-480X1.png"; sourceTree = "<group>"; };
+		AF9EF0261A2732B500AF2245 /* 姓名-44X44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "姓名-44X44.png"; sourceTree = "<group>"; };
+		AF9EF0271A2732B500AF2245 /* 学号-44X44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学号-44X44.png"; sourceTree = "<group>"; };
+		AF9EF03A1A274B6900AF2245 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		AF9EF03B1A274B6900AF2245 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		AF9EF03C1A274B6900AF2245 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		AF9EF03D1A274B6900AF2245 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		AF9EF0401A27588900AF2245 /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
+		AF9EF0411A27588900AF2245 /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
 		AFCFEFAF1A25B9E200C508E7 /* Dianlala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dianlala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCFEFB31A25B9E200C508E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCFEFB41A25B9E200C508E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFCFEFB71A25B9E200C508E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AFCFEFB91A25B9E200C508E7 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AFCFEFB91A25B9E200C508E7 /* BindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindViewController.h; sourceTree = "<group>"; };
+		AFCFEFBA1A25B9E200C508E7 /* BindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindViewController.m; sourceTree = "<group>"; };
 		AFCFEFBD1A25B9E200C508E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AFCFEFC21A25B9E200C508E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,6 +143,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AF9EF00B1A27327C00AF2245 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AF9EF0381A2732C000AF2245 /* material */,
+				AF9EF00C1A27329D00AF2245 /* 登录界面.png */,
+				AF9EF00D1A27329D00AF2245 /* 点名成功.png */,
+				AF9EF00E1A27329D00AF2245 /* 点名失败.png */,
+				AF9EF00F1A27329D00AF2245 /* 更改信息成功.png */,
+				AF9EF0101A27329D00AF2245 /* 更改信息界面.png */,
+				AF9EF0111A27329D00AF2245 /* 主界面.bmp */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AF9EF0381A2732C000AF2245 /* material */ = {
+			isa = PBXGroup;
+			children = (
+				AF9EF0181A2732B500AF2245 /* 按钮_1-640X100.png */,
+				AF9EF0191A2732B500AF2245 /* 按钮_2-280X105.png */,
+				AF9EF01A1A2732B500AF2245 /* 背景-640X960.png */,
+				AF9EF01B1A2732B500AF2245 /* 背景-640X1136.png */,
+				AF9EF01C1A2732B500AF2245 /* 背景1-640X960.png */,
+				AF9EF01D1A2732B500AF2245 /* 背景1-640X1136.png */,
+				AF9EF01E1A2732B500AF2245 /* 成功-350X350.png */,
+				AF9EF01F1A2732B500AF2245 /* 顶红-640X100.png */,
+				AF9EF0201A2732B500AF2245 /* 顶蓝-640X100.png */,
+				AF9EF0211A2732B500AF2245 /* 返回箭头.png */,
+				AF9EF0221A2732B500AF2245 /* 人头-405X404.png */,
+				AF9EF0231A2732B500AF2245 /* 扫描-504X505.png */,
+				AF9EF0241A2732B500AF2245 /* 失败-350X350.png */,
+				AF9EF0251A2732B500AF2245 /* 线-480X1.png */,
+				AF9EF0261A2732B500AF2245 /* 姓名-44X44.png */,
+				AF9EF0271A2732B500AF2245 /* 学号-44X44.png */,
+			);
+			name = material;
+			sourceTree = "<group>";
+		};
+		AF9EF0391A274B3100AF2245 /* bootstrapButton */ = {
+			isa = PBXGroup;
+			children = (
+				AF9EF03A1A274B6900AF2245 /* NSString+FontAwesome.h */,
+				AF9EF03B1A274B6900AF2245 /* NSString+FontAwesome.m */,
+				AF9EF03C1A274B6900AF2245 /* UIButton+Bootstrap.h */,
+				AF9EF03D1A274B6900AF2245 /* UIButton+Bootstrap.m */,
+			);
+			name = bootstrapButton;
+			sourceTree = "<group>";
+		};
 		AFCFEFA61A25B9E200C508E7 = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +214,14 @@
 		AFCFEFB11A25B9E200C508E7 /* Dianlala */ = {
 			isa = PBXGroup;
 			children = (
-				AFCFEFB91A25B9E200C508E7 /* LoginViewController.h */,
-				AFCFEFBA1A25B9E200C508E7 /* LoginViewController.m */,
+				AFCFEFB91A25B9E200C508E7 /* BindViewController.h */,
+				AFCFEFBA1A25B9E200C508E7 /* BindViewController.m */,
 				AFCFEFDC1A25F7C600C508E7 /* QRViewController.h */,
 				AFCFEFDD1A25F7C700C508E7 /* QRViewController.m */,
+				AF9EF0401A27588900AF2245 /* ConfirmViewController.h */,
+				AF9EF0411A27588900AF2245 /* ConfirmViewController.m */,
+				AF24656C1A276E1F00577C53 /* ResetBindViewController.h */,
+				AF24656D1A276E1F00577C53 /* ResetBindViewController.m */,
 				AFCFEFBC1A25B9E200C508E7 /* Main.storyboard */,
 				AFCFEFD81A25E3CF00C508E7 /* Vendor */,
 				AFCFEFB21A25B9E200C508E7 /* Supporting Files */,
@@ -124,6 +232,7 @@
 		AFCFEFB21A25B9E200C508E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF9EF00B1A27327C00AF2245 /* Images */,
 				AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */,
 				AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */,
 				AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */,
@@ -155,6 +264,7 @@
 		AFCFEFD81A25E3CF00C508E7 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				AF9EF0391A274B3100AF2245 /* bootstrapButton */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -242,9 +352,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFCFEFBE1A25B9E200C508E7 /* Main.storyboard in Resources */,
+				AF9EF0151A27329D00AF2245 /* 更改信息成功.png in Resources */,
+				AF9EF0281A2732B500AF2245 /* 按钮_1-640X100.png in Resources */,
+				AF9EF02E1A2732B500AF2245 /* 成功-350X350.png in Resources */,
 				AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */,
+				AF9EF0131A27329D00AF2245 /* 点名成功.png in Resources */,
 				AFCFEFE01A25FD6000C508E7 /* beep.mp3 in Resources */,
+				AF9EF0351A2732B500AF2245 /* 线-480X1.png in Resources */,
+				AF9EF0121A27329D00AF2245 /* 登录界面.png in Resources */,
+				AF9EF02B1A2732B500AF2245 /* 背景-640X1136.png in Resources */,
 				AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */,
+				AF9EF0311A2732B500AF2245 /* 返回箭头.png in Resources */,
+				AF9EF02D1A2732B500AF2245 /* 背景1-640X1136.png in Resources */,
+				AF9EF0291A2732B500AF2245 /* 按钮_2-280X105.png in Resources */,
+				AF9EF02C1A2732B500AF2245 /* 背景1-640X960.png in Resources */,
+				AF9EF0341A2732B500AF2245 /* 失败-350X350.png in Resources */,
+				AF9EF0361A2732B500AF2245 /* 姓名-44X44.png in Resources */,
+				AF9EF02F1A2732B500AF2245 /* 顶红-640X100.png in Resources */,
+				AF9EF0161A27329D00AF2245 /* 更改信息界面.png in Resources */,
+				AF9EF0141A27329D00AF2245 /* 点名失败.png in Resources */,
+				AF9EF02A1A2732B500AF2245 /* 背景-640X960.png in Resources */,
+				AF9EF0321A2732B500AF2245 /* 人头-405X404.png in Resources */,
+				AF9EF0171A27329D00AF2245 /* 主界面.bmp in Resources */,
+				AF9EF0371A2732B500AF2245 /* 学号-44X44.png in Resources */,
+				AF9EF0301A2732B500AF2245 /* 顶蓝-640X100.png in Resources */,
+				AF9EF0331A2732B500AF2245 /* 扫描-504X505.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCFEFBB1A25B9E200C508E7 /* LoginViewController.m in Sources */,
+				AF9EF03F1A274B6900AF2245 /* UIButton+Bootstrap.m in Sources */,
+				AF9EF03E1A274B6900AF2245 /* NSString+FontAwesome.m in Sources */,
+				AFCFEFBB1A25B9E200C508E7 /* BindViewController.m in Sources */,
+				AF24656E1A276E1F00577C53 /* ResetBindViewController.m in Sources */,
 				AFCFEFB81A25B9E200C508E7 /* AppDelegate.m in Sources */,
 				AFCFEFDE1A25F7C700C508E7 /* QRViewController.m in Sources */,
 				AFCFEFB51A25B9E200C508E7 /* main.m in Sources */,
+				AF9EF0421A27588900AF2245 /* ConfirmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

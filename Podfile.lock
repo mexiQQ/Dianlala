@@ -20,11 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FCUUID (1.1.4):
+    - UICKeyChainStore (~> 1.0.5)
+  - UICKeyChainStore (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4.1)
+  - FCUUID (~> 1.1.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  FCUUID: 4f4650dff4625130a0a4f65ff07e4c93a0eba0e5
+  UICKeyChainStore: 4f9719600cc70025064e26f28f1210bcfc3b0c35
 
 COCOAPODS: 0.34.2

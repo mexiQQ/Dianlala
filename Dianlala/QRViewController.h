@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIButton+Bootstrap.h"
+
 #import <AVFoundation/AVFoundation.h>
 
 @interface QRViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *QRView;
-@property (weak, nonatomic) IBOutlet UILabel *ScaningState;
+@property (weak, nonatomic) IBOutlet UIButton *startAndStopButton;
+
 - (IBAction)StartScaning:(id)sender;
-- (IBAction)StopScaning:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
 
 @end
