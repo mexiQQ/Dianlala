@@ -10,4 +10,5 @@
 
 @interface ValidSuccessViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *Infolabel;
 @end

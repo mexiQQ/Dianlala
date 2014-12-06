@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ValidFaileViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *InfoLabel;
 
 @end

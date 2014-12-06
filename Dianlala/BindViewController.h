@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FCUUID.h"
 #import "UIButton+Bootstrap.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @interface BindViewController : UIViewController
 

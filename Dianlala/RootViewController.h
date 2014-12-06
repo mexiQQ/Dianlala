@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "ValidFaileViewController.h"
 #import "ValidSuccessViewController.h"
+
 @interface RootViewController : UIViewController<AVCaptureMetadataOutputObjectsDelegate>
 {
     int num;
@@ -24,4 +25,5 @@
 @property (strong,nonatomic)AVCaptureVideoPreviewLayer * preview;
 @property (nonatomic, retain) UIImageView * line;
 @property (strong,nonatomic) UIActivityIndicatorView *Indicator;
+@property (strong,nonatomic) NSString *Info;
 @end

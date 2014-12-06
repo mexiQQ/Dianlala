@@ -28,17 +28,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     
+    NSLog(@"%f",self.view.frame.size.height);
     //对button的配置
     UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [scanButton setTitle:@"取消" forState:UIControlStateNormal];
     [scanButton.titleLabel setFont:[UIFont systemFontOfSize:20.0]];
     [scanButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [scanButton setFrame:CGRectMake(100, 420, 120, 40)];
+    [scanButton setFrame:CGRectMake((self.view.frame.size.width-120)/2, (420/568)*self.view.frame.size.height, 120, 40)];
     [scanButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:scanButton];
     
     //对label的配置
-    UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake(15, 40, 290, 50)];
+    UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake((self.view.frame.size.width-290)/2, 40, 290, 50)];
     labIntroudction.backgroundColor = [UIColor clearColor];
     labIntroudction.numberOfLines=2;
     labIntroudction.textColor=[UIColor whiteColor];
@@ -51,7 +52,7 @@
     [_Indicator hidesWhenStopped];
     [self.view addSubview:_Indicator];
     
-    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 100, 300, 300)];
+    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.frame.size.width-300)/2, (100/640)*self.view.frame.size.height, 300, 300)];
     imageView.image = [UIImage imageNamed:@"pick_bg"];
     [self.view addSubview:imageView];
     
@@ -85,10 +86,8 @@
 
 -(void)backAction
 {
-    
-    [self dismissViewControllerAnimated:YES completion:^{
-        [timer invalidate];
-    }];
+    [timer invalidate];
+    [self performSegueWithIdentifier:@"rootGoQR" sender:self];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -149,26 +148,33 @@
     [_session stopRunning];
     [_Indicator startAnimating];
     
+    NSLog(@"%@",stringValue);
+    
+    NSUserDefaults *userDeault = [NSUserDefaults standardUserDefaults];
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://ljwtest.sinaapp.com/testJson.php" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    //manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    NSDictionary *parameters = @{@"sname":[userDeault objectForKey:@"username"],@"sid":[userDeault objectForKey:@"password"],@"os":@"iOS",@"pid":[userDeault objectForKey:@"uuid"],@"sig":[userDeault objectForKey:@"sig"]};
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [manager POST:stringValue parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-        [_Indicator stopAnimating];
         [timer invalidate];
-        [self performSegueWithIdentifier:@"signSuccess" sender:self];
+        [_Indicator stopAnimating];
+
+        if(1==1){
+            _Info = [NSString stringWithFormat:@""];
+            [self performSegueWithIdentifier:@"loginSegue" sender:self];
+        }else{
+            _Info = @"该手机已签到，请勿重复签到";
+            [self performSegueWithIdentifier:@"signFaile" sender:self];
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
-        [_Indicator stopAnimating];
+        _Info = @"网络故障，请重试";
         [timer invalidate];
-        [self performSegueWithIdentifier:@"scaning" sender:self];
+        [_Indicator stopAnimating];
+        [self performSegueWithIdentifier:@"signFaile" sender:self];
     }];
-    
-    /*
-    [self dismissViewControllerAnimated:YES completion:^
-     {
-         [timer invalidate];
-         NSLog(@"%@",stringValue);
-     }];
-     */
 }
 
 - (void)didReceiveMemoryWarning
@@ -176,5 +182,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"signSuccess"]){
+        ValidSuccessViewController *destViewController = segue.destinationViewController;
+        destViewController.Infolabel.text = @"";
+    }else if([segue.identifier isEqualToString:@"signFaile"]){
+        ValidFaileViewController *destViewController = segue.destinationViewController;
+        destViewController.InfoLabel.text = _Info;
+    }else{
+    
+    }
+}
+
 
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1QP-4c-EcW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="343"/>
+            <point key="canvasLocation" x="545" y="581"/>
         </scene>
         <!--Confirm View Controller-->
         <scene sceneID="oxp-Ud-Yqr">
@@ -196,13 +196,13 @@
                     <navigationItem key="navigationItem" id="qTS-Dy-IC4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="N1d-Fq-rYD" kind="push" identifier="gotoScan" id="bt9-bH-7oV"/>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="resetBind" id="uS5-rS-R42"/>
+                        <segue destination="N1d-Fq-rYD" kind="push" identifier="gotoScan" id="2c7-sy-mwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IS4-EA-B0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="319"/>
+            <point key="canvasLocation" x="990" y="-120"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="JTQ-Bw-9zu">
@@ -221,11 +221,12 @@
                     <connections>
                         <segue destination="nbs-EO-ZL3" kind="push" identifier="signSuccess" id="KKd-LG-msw"/>
                         <segue destination="Yeb-QG-smg" kind="push" identifier="signFaile" id="NoX-Wn-KmF"/>
+                        <segue destination="N1d-Fq-rYD" kind="push" identifier="rootGoQR" id="e4Q-Jl-oLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ijb-sy-TYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="-82"/>
+            <point key="canvasLocation" x="1624" y="1062"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JEW-gW-Axg">
@@ -248,10 +249,11 @@
                                             <constraint firstAttribute="width" secondItem="GCj-RW-Jt9" secondAttribute="height" multiplier="1:1" id="6tI-7v-wQI"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZs-ix-E74">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZs-ix-E74">
                                         <rect key="frame" x="113" y="301" width="95" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="95" id="TLA-Xt-RK8"/>
+                                            <constraint firstAttribute="width" secondItem="uZs-ix-E74" secondAttribute="height" multiplier="19:6" id="bEx-1B-VEj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="点击扫描">
@@ -307,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqD-ZY-QcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421" y="343"/>
+            <point key="canvasLocation" x="2156" y="-120"/>
         </scene>
         <!--Reset Bind View Controller-->
         <scene sceneID="5NJ-7E-HYd">
@@ -360,7 +362,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="N1d-Fq-rYD" kind="push" id="930-cM-rWd"/>
+                                            <segue destination="N1d-Fq-rYD" kind="push" id="K0s-tT-j2k"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -399,12 +401,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Amz-zS-Ld7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="1034"/>
+            <point key="canvasLocation" x="958" y="1062"/>
         </scene>
-        <!--View Controller-->
+        <!--Valid Faile View Controller-->
         <scene sceneID="TIs-lC-MhR">
             <objects>
-                <viewController id="Yeb-QG-smg" sceneMemberID="viewController">
+                <viewController id="Yeb-QG-smg" customClass="ValidFaileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="43l-by-jFc"/>
                         <viewControllerLayoutGuide type="bottom" id="Bp6-RC-Obm"/>
@@ -424,7 +426,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="N1d-Fq-rYD" kind="push" id="DTd-qe-Bqa"/>
+                                    <segue destination="N1d-Fq-rYD" kind="push" id="qmp-xr-rym"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="该手机已签到，请勿重复签到" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-Mk-Enr">
@@ -437,15 +439,18 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QWx-UU-uA5"/>
+                    <connections>
+                        <outlet property="InfoLabel" destination="LZS-Mk-Enr" id="Orh-sn-L8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGk-MP-Wy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2254" y="583"/>
+            <point key="canvasLocation" x="2584" y="1078"/>
         </scene>
-        <!--View Controller-->
+        <!--Valid Success View Controller-->
         <scene sceneID="djP-9i-7FH">
             <objects>
-                <viewController id="nbs-EO-ZL3" sceneMemberID="viewController">
+                <viewController id="nbs-EO-ZL3" customClass="ValidSuccessViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a3u-et-kjG"/>
                         <viewControllerLayoutGuide type="bottom" id="7PI-sk-7Xt"/>
@@ -471,22 +476,25 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="N1d-Fq-rYD" kind="push" id="Tat-kX-Zkd"/>
+                                    <segue destination="N1d-Fq-rYD" kind="push" id="aWw-CP-fCO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="tdH-n5-CBj"/>
+                    <connections>
+                        <outlet property="Infolabel" destination="nbY-nL-XSw" id="Dtd-eN-KR4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yto-wW-rM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="-114"/>
+            <point key="canvasLocation" x="2584" y="345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ipi-8p-V3Z">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1QP-4c-EcW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="bind" automaticallyAdjustsScrollViewInsets="NO" id="1QP-4c-EcW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JBw-U4-F8H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -499,7 +507,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPk-OU-0w4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="319"/>
+            <point key="canvasLocation" x="131" y="593"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fhj-Ms-evU">
+            <objects>
+                <navigationController storyboardIdentifier="qreader" automaticallyAdjustsScrollViewInsets="NO" id="5fy-CM-vNT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="IKK-Q5-Fkg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mU8-Tr-jFi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N1d-Fq-rYD" kind="relationship" relationship="rootViewController" id="e4d-rC-QQP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrA-q6-z8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597" y="-630"/>
         </scene>
     </scenes>
     <resources>
@@ -514,8 +541,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="qmp-xr-rym"/>
         <segue reference="Jew-eb-xUs"/>
-        <segue reference="bt9-bH-7oV"/>
         <segue reference="uS5-rS-R42"/>
     </inferredMetricsTieBreakers>
 </document>

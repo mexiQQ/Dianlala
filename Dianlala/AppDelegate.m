@@ -7,16 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "BindViewController.h"
+#import "QRViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"isBind"]){
+        QRViewController *qreader = [mainStoryboard instantiateViewControllerWithIdentifier:@"qreader"];
+        
+        window.rootViewController = qreader;
+    }else{
+        BindViewController *bind = [mainStoryboard instantiateViewControllerWithIdentifier:@"bind"];
+        
+        window.rootViewController = bind;
+    }
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 

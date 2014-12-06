@@ -27,16 +27,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)resetInfo:(id)sender {
     NSString *uuid = [FCUUID uuidForDevice];
     NSLog(@"the uuid is %@",uuid);
@@ -44,11 +34,28 @@
     NSString *username = _usernameReset.text;
     NSString *password = _passwordReset.text;
     
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *sig = [self md5:[NSString stringWithFormat:@"%@%@%@iOS%@",uuid,[username stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],password,uuid]];
     
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:username forKey:@"username"];
     [userDefaults setObject:password forKey:@"password"];
     [userDefaults setObject:uuid forKey:@"uuid"];
-    //[self performSegueWithIdentifier:@"confirmBind" sender:self];
+    [userDefaults setObject:sig forKey:@"sig"];
+    [userDefaults setBool:YES forKey:@"isBind"];
+}
+
+#pragma -mark md5
+- (NSString *)md5:(NSString *)str
+{
+    const char *cStr = [str UTF8String];
+    unsigned char result[16];
+    CC_MD5(cStr, strlen(cStr), result);
+    return [NSString stringWithFormat:
+            @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
+            result[0], result[1], result[2], result[3],
+            result[4], result[5], result[6], result[7],
+            result[8], result[9], result[10], result[11],
+            result[12], result[13], result[14], result[15]
+            ];
 }
 @end

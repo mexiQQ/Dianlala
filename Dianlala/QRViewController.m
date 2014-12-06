@@ -171,39 +171,5 @@
             }
         }
     }
-    
-    /*
-     #pragma mark - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    /*
-     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-     [manager GET:@"http://ljwtest.sinaapp.com/testJson.php" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-     NSLog(@"JSON: %@", responseObject);
-     [self performSegueWithIdentifier:@"loginSegue" sender:self];
-     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-     NSLog(@"Error: %@", error);
-     }];
-     
-     
-     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-     manager.requestSerializer = [AFJSONRequestSerializer serializer];
-     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-     NSDictionary *parameters = @{@"name": @"lijianwei",@"desc":@"boy"};
-     [manager POST:@"http://localhost:8080/api/Laboratory" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-     NSLog(@"JSON: %@", responseObject);
-     [self performSegueWithIdentifier:@"loginSegue" sender:self];
-     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-     NSLog(@"Error: %@", error);
-     }];
-     */
-
 }
-
 @end
