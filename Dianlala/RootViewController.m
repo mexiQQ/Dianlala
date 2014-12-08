@@ -28,18 +28,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     
-    NSLog(@"%f",self.view.frame.size.height);
+    //NSLog(@"%f",420/568);
     //对button的配置
     UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [scanButton setTitle:@"取消" forState:UIControlStateNormal];
     [scanButton.titleLabel setFont:[UIFont systemFontOfSize:20.0]];
     [scanButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [scanButton setFrame:CGRectMake((self.view.frame.size.width-120)/2, (420/568)*self.view.frame.size.height, 120, 40)];
+    [scanButton setFrame:CGRectMake((self.view.frame.size.width-120)/2, (420/(float)568)*self.view.frame.size.height, 120, 40)];
     [scanButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:scanButton];
     
     //对label的配置
-    UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake((self.view.frame.size.width-290)/2, 40, 290, 50)];
+    UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake((self.view.frame.size.width-290)/2, (40/(float)568)*self.view.frame.size.height, 290, 50)];
     labIntroudction.backgroundColor = [UIColor clearColor];
     labIntroudction.numberOfLines=2;
     labIntroudction.textColor=[UIColor whiteColor];
@@ -52,11 +52,11 @@
     [_Indicator hidesWhenStopped];
     [self.view addSubview:_Indicator];
     
-    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.frame.size.width-300)/2, (100/640)*self.view.frame.size.height, 300, 300)];
+    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake((self.view.frame.size.width-300)/2, (100/(float)568)*self.view.frame.size.height, 300, 300)];
     imageView.image = [UIImage imageNamed:@"pick_bg"];
     [self.view addSubview:imageView];
     
-    _line = [[UIImageView alloc] initWithFrame:CGRectMake(50, 110, 220, 2)];
+    _line = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-220)/2, (110/(float)568)*self.view.frame.size.height, 220, 2)];
     _line.image = [UIImage imageNamed:@"line.png"];
     [self.view addSubview:_line];
     
@@ -70,14 +70,14 @@
 {
     if (upOrdown == NO) {
         num ++;
-        _line.frame = CGRectMake(50, 110+2*num, 220, 2);
+        _line.frame = CGRectMake((self.view.frame.size.width-220)/2, (110/(float)568)*self.view.frame.size.height+2*num, 220, 2);
         if (2*num == 280) {
             upOrdown = YES;
         }
     }
     else {
         num --;
-        _line.frame = CGRectMake(50, 110+2*num, 220, 2);
+        _line.frame = CGRectMake((self.view.frame.size.width-220)/2, (110/(float)568)*self.view.frame.size.height+2*num, 220, 2);
         if (num == 0) {
             upOrdown = NO;
         }
@@ -151,21 +151,29 @@
     NSLog(@"%@",stringValue);
     
     NSUserDefaults *userDeault = [NSUserDefaults standardUserDefaults];
-    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    //manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    NSDictionary *parameters = @{@"sname":[userDeault objectForKey:@"username"],@"sid":[userDeault objectForKey:@"password"],@"os":@"iOS",@"pid":[userDeault objectForKey:@"uuid"],@"sig":[userDeault objectForKey:@"sig"]};
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    NSLog(@"%@",[userDeault objectForKey:@"sig"]);
+    NSDictionary *parameters = @{@"sname":[[userDeault objectForKey:@"username"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],@"sid":[userDeault objectForKey:@"password"],@"os":@"iOS",@"pid":[userDeault objectForKey:@"uuid"],@"sig":[userDeault objectForKey:@"sig"]};
+    //manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     [manager POST:stringValue parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+        
         [timer invalidate];
         [_Indicator stopAnimating];
 
-        if(1==1){
-            _Info = [NSString stringWithFormat:@""];
-            [self performSegueWithIdentifier:@"loginSegue" sender:self];
-        }else{
+        NSArray *res = (NSArray *)responseObject;
+        NSDictionary *re = (NSDictionary *)res[0];
+        if(res.count == 3){
+            NSString *tname = [re objectForKey:@"tname"];
+            NSString *cname = [re objectForKey:@"cname"];
+            _Info = [NSString stringWithFormat:@"您已经在%@老师的%@课上点名成功",[self UTF8_To_GB2312:tname],[self UTF8_To_GB2312:cname]];
+            [self performSegueWithIdentifier:@"signSuccess" sender:self];
+        }else if([[re objectForKey:@"result"] isEqualToString:@"1002"]){
             _Info = @"该手机已签到，请勿重复签到";
+            [self performSegueWithIdentifier:@"signFaile" sender:self];
+
+        }else{
+            _Info = @"请求操时";
             [self performSegueWithIdentifier:@"signFaile" sender:self];
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -188,7 +196,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"signSuccess"]){
         ValidSuccessViewController *destViewController = segue.destinationViewController;
-        destViewController.Infolabel.text = @"";
+        destViewController.Infolabel.text = _Info;
     }else if([segue.identifier isEqualToString:@"signFaile"]){
         ValidFaileViewController *destViewController = segue.destinationViewController;
         destViewController.InfoLabel.text = _Info;
@@ -197,5 +205,12 @@
     }
 }
 
+#pragma mark -utf-8-gbk
+- (NSString*)UTF8_To_GB2312:(NSString*)utf8string
+{
+    NSStringEncoding encoding =CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSData* gb2312data = [utf8string dataUsingEncoding:encoding];
+    return [[NSString alloc] initWithData:gb2312data encoding:encoding];
+}
 
 @end

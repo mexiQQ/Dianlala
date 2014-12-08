@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UIButton+Bootstrap.h"
-#import "RootViewController.h"
 
-#import <AVFoundation/AVFoundation.h>
-
-@interface QRViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@interface QRViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *QRView;
 @property (weak, nonatomic) IBOutlet UIButton *startAndStopButton;
