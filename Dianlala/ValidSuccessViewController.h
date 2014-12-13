@@ -11,4 +11,5 @@
 @interface ValidSuccessViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *Infolabel;
+@property (strong,nonatomic) NSString *Info;
 @end

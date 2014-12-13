@@ -13,9 +13,10 @@
 @end
 
 @implementation ValidSuccessViewController
-
+@synthesize Info = _Info;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _Infolabel.text = _Info;
     // Do any additional setup after loading the view.
 }
 

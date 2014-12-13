@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "BindViewController.h"
 #import "QRViewController.h"
-
+#import "WelcomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,16 +22,21 @@
     
     UIStoryboard* mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"isBind"]){
-        QRViewController *qreader = [mainStoryboard instantiateViewControllerWithIdentifier:@"qreader"];
-        
-        window.rootViewController = qreader;
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"first_launch"]){
+        WelcomeViewController *welcome = [mainStoryboard instantiateViewControllerWithIdentifier:@"welcome"];
+        window.rootViewController = welcome;
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"first_launch"];
     }else{
-        BindViewController *bind = [mainStoryboard instantiateViewControllerWithIdentifier:@"bind"];
-        
-        window.rootViewController = bind;
+        if([[NSUserDefaults standardUserDefaults] objectForKey:@"isBind"]){
+            QRViewController *qreader = [mainStoryboard instantiateViewControllerWithIdentifier:@"qreader"];
+            window.rootViewController = qreader;
+        }else{
+            BindViewController *bind = [mainStoryboard instantiateViewControllerWithIdentifier:@"bind"];
+            
+            window.rootViewController = bind;
+        }
     }
-    [window makeKeyAndVisible];
+        [window makeKeyAndVisible];
     
     return YES;
 }

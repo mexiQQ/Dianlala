@@ -10,5 +10,6 @@
 
 @interface ValidFaileViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *InfoLabel;
+@property (strong,nonatomic) NSString *Info;
 
 @end

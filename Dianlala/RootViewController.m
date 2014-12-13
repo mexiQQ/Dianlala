@@ -28,7 +28,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     
-    //NSLog(@"%f",420/568);
+    //因爲無法使用虛擬機測試二維碼，所以使用代碼佈局
     //对button的配置
     UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [scanButton setTitle:@"取消" forState:UIControlStateNormal];
@@ -163,7 +163,7 @@
 
         NSArray *res = (NSArray *)responseObject;
         NSDictionary *re = (NSDictionary *)res[0];
-        if(res.count == 3){
+        if(re.count == 3){
             NSString *tname = [re objectForKey:@"tname"];
             NSString *cname = [re objectForKey:@"cname"];
             _Info = [NSString stringWithFormat:@"您已经在%@老师的%@课上点名成功",[self UTF8_To_GB2312:tname],[self UTF8_To_GB2312:cname]];
@@ -196,10 +196,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"signSuccess"]){
         ValidSuccessViewController *destViewController = segue.destinationViewController;
-        destViewController.Infolabel.text = _Info;
+        destViewController.Info = _Info;
     }else if([segue.identifier isEqualToString:@"signFaile"]){
         ValidFaileViewController *destViewController = segue.destinationViewController;
-        destViewController.InfoLabel.text = _Info;
+        destViewController.Info = _Info;
     }else{
     
     }

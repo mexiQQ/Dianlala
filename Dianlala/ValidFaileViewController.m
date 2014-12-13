@@ -13,9 +13,10 @@
 @end
 
 @implementation ValidFaileViewController
-
+@synthesize Info = _Info;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _InfoLabel.text = _Info;
     // Do any additional setup after loading the view.
 }
 
