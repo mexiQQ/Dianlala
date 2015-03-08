@@ -11,11 +11,9 @@
 
 @interface QRViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIView *QRView;
-@property (weak, nonatomic) IBOutlet UIButton *startAndStopButton;
+@property(weak, nonatomic) IBOutlet UIView *QRView;
 
-- (IBAction)StartScaning:(id)sender;
+@property(weak, nonatomic) IBOutlet UIButton *resetButton;
 
-@property (weak, nonatomic) IBOutlet UIButton *resetButton;
-
+@property(weak, nonatomic) IBOutlet UIImageView *imageButton;
 @end

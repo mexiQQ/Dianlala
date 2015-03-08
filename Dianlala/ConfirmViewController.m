@@ -15,32 +15,31 @@
 @implementation ConfirmViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    [self.navigationController.navigationBar setHidden:YES];
+  [super viewDidLoad];
+  _nameLabel.text =
+      [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
 
-    // Do any additional setup after loading the view.
+  _studentNumberLable.text =
+      [[NSUserDefaults standardUserDefaults] objectForKey:@"password"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [self.navigationController.navigationBar setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)confirmSuccess:(id)sender {
-    [self performSegueWithIdentifier:@"gotoScan" sender:self];
+  UIStoryboard *mainStoryboard =
+      [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+  id viewController =
+      [mainStoryboard instantiateViewControllerWithIdentifier:@"rootPage"];
+  [self.navigationController pushViewController:viewController animated:YES];
+}
+- (IBAction)cancelAction:(id)sender {
+  [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)resetBind:(id)sender {
-    [self performSegueWithIdentifier:@"resetBind" sender:self];
-}
 @end

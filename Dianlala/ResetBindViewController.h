@@ -13,9 +13,8 @@
 
 @interface ResetBindViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *usernameReset;
-@property (weak, nonatomic) IBOutlet UITextField *passwordReset;
-@property (weak, nonatomic) IBOutlet UIButton *resetInfoButton;
-@property (weak, nonatomic) IBOutlet UIView *toobar;
+@property(weak, nonatomic) IBOutlet UITextField *usernameReset;
+@property(weak, nonatomic) IBOutlet UITextField *passwordReset;
+@property(weak, nonatomic) IBOutlet UIButton *resetInfoButton;
 - (IBAction)resetInfo:(id)sender;
 @end

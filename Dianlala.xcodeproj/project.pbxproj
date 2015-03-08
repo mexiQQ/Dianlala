@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AF24656E1A276E1F00577C53 /* ResetBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF24656D1A276E1F00577C53 /* ResetBindViewController.m */; };
 		AF535A6A1A3311C20016B2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF535A691A3311C20016B2C5 /* Main.storyboard */; };
+		AF567D9F1AA828400082AB74 /* icon_btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = AF567D9D1AA828400082AB74 /* icon_btn_back.png */; };
+		AF567DA01AA828400082AB74 /* icon_btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF567D9E1AA828400082AB74 /* icon_btn_back@2x.png */; };
 		AF67CB601A3CA57B0097BA6F /* 欢迎1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF67CB5E1A3CA57B0097BA6F /* 欢迎1.png */; };
 		AF67CB611A3CA57B0097BA6F /* 欢迎2.png in Resources */ = {isa = PBXBuildFile; fileRef = AF67CB5F1A3CA57B0097BA6F /* 欢迎2.png */; };
 		AF67CB641A3CA5AA0097BA6F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF67CB631A3CA5AA0097BA6F /* WelcomeViewController.m */; };
@@ -57,7 +59,6 @@
 		AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFC11A25B9E200C508E7 /* LaunchScreen.xib */; };
 		AFCFEFCF1A25B9E200C508E7 /* DianlalaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFCE1A25B9E200C508E7 /* DianlalaTests.m */; };
 		AFCFEFDE1A25F7C700C508E7 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCFEFDD1A25F7C700C508E7 /* QRViewController.m */; };
-		AFCFEFE01A25FD6000C508E7 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */; };
 		BC2B7B0A564C6CEC8337CBC8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58DED6D18CD1CA018BEAE3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,8 @@
 		AF24656D1A276E1F00577C53 /* ResetBindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetBindViewController.m; sourceTree = "<group>"; };
 		AF535A601A32D8100016B2C5 /* Dianlala.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Dianlala.entitlements; sourceTree = "<group>"; };
 		AF535A691A3311C20016B2C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AF567D9D1AA828400082AB74 /* icon_btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_btn_back.png; sourceTree = "<group>"; };
+		AF567D9E1AA828400082AB74 /* icon_btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_back@2x.png"; sourceTree = "<group>"; };
 		AF67CB5E1A3CA57B0097BA6F /* 欢迎1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "欢迎1.png"; sourceTree = "<group>"; };
 		AF67CB5F1A3CA57B0097BA6F /* 欢迎2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "欢迎2.png"; sourceTree = "<group>"; };
 		AF67CB621A3CA5AA0097BA6F /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
@@ -139,7 +142,6 @@
 		AFCFEFCE1A25B9E200C508E7 /* DianlalaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DianlalaTests.m; sourceTree = "<group>"; };
 		AFCFEFDC1A25F7C600C508E7 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		AFCFEFDD1A25F7C700C508E7 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
-		AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		BADD36F590F7E1511B8BFD23 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BF54BFD3F69D7D8686E53AA9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +243,8 @@
 				AF9EF00F1A27329D00AF2245 /* 更改信息成功.png */,
 				AF9EF0101A27329D00AF2245 /* 更改信息界面.png */,
 				AF9EF0111A27329D00AF2245 /* 主界面.bmp */,
+				AF567D9D1AA828400082AB74 /* icon_btn_back.png */,
+				AF567D9E1AA828400082AB74 /* icon_btn_back@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -319,7 +323,6 @@
 			isa = PBXGroup;
 			children = (
 				AF9EF00B1A27327C00AF2245 /* Images */,
-				AFCFEFDF1A25FD6000C508E7 /* beep.mp3 */,
 				AFCFEFBF1A25B9E200C508E7 /* Images.xcassets */,
 				AF535A601A32D8100016B2C5 /* Dianlala.entitlements */,
 				AFCFEFB61A25B9E200C508E7 /* AppDelegate.h */,
@@ -452,7 +455,6 @@
 				AF9EF02E1A2732B500AF2245 /* 成功-350X350.png in Resources */,
 				AFCFEFC31A25B9E200C508E7 /* LaunchScreen.xib in Resources */,
 				AF9EF0131A27329D00AF2245 /* 点名成功.png in Resources */,
-				AFCFEFE01A25FD6000C508E7 /* beep.mp3 in Resources */,
 				AF9EF0351A2732B500AF2245 /* 线-480X1.png in Resources */,
 				AF67CB601A3CA57B0097BA6F /* 欢迎1.png in Resources */,
 				AF535A6A1A3311C20016B2C5 /* Main.storyboard in Resources */,
@@ -460,6 +462,7 @@
 				AF9EF0121A27329D00AF2245 /* 登录界面.png in Resources */,
 				AF9EF02B1A2732B500AF2245 /* 背景-640X1136.png in Resources */,
 				AFCFEFC01A25B9E200C508E7 /* Images.xcassets in Resources */,
+				AF567DA01AA828400082AB74 /* icon_btn_back@2x.png in Resources */,
 				AF9EF0311A2732B500AF2245 /* 返回箭头.png in Resources */,
 				AF9EF02D1A2732B500AF2245 /* 背景1-640X1136.png in Resources */,
 				AF9EF0291A2732B500AF2245 /* 按钮_2-280X105.png in Resources */,
@@ -471,6 +474,7 @@
 				AF9EF0161A27329D00AF2245 /* 更改信息界面.png in Resources */,
 				AF9EF0141A27329D00AF2245 /* 点名失败.png in Resources */,
 				AF9EF02A1A2732B500AF2245 /* 背景-640X960.png in Resources */,
+				AF567D9F1AA828400082AB74 /* icon_btn_back.png in Resources */,
 				AF9EF0321A2732B500AF2245 /* 人头-405X404.png in Resources */,
 				AF9EF0171A27329D00AF2245 /* 主界面.bmp in Resources */,
 				AFC588081A2F588A0015BF75 /* pick_bg@2x.png in Resources */,
@@ -657,6 +661,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Dianlala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -673,6 +678,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Dianlala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ConfirmViewController : UIViewController
+@property(weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property(weak, nonatomic) IBOutlet UILabel *studentNumberLable;
 
 - (IBAction)confirmSuccess:(id)sender;
-- (IBAction)resetBind:(id)sender;
 @end

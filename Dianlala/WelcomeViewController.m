@@ -10,8 +10,10 @@
 
 @implementation WelcomeViewController
 
--(void)viewDidLoad{
-    [super viewDidLoad];
-    [self.navigationController.navigationBar setHidden:YES];
+- (void)viewDidLoad {
+  [super viewDidLoad];
+}
+- (void)viewWillAppear:(BOOL)animated {
+  [self.navigationController.navigationBar setHidden:YES];
 }
 @end
